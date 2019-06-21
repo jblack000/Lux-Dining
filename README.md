@@ -32,4 +32,4 @@ Any text editor of your choice.
 
 ## Source
 
-This project was inspired Toca Madera's website, which was created by BentoBox. This is a well designed site that quickly attracted my attention.
+This project was inspired by Toca Madera's website, which was created by BentoBox. This is a well designed site that quickly attracted my attention.
