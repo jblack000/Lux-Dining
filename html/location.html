@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+      integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+      crossorigin=""
+    ></script>
+    <title>Lux Dining</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <header>
+        <nav class="nav-container">
+          <h1 class="logo"><a href="index.html">Lux Dining</a></h1>
+          <div class="nav-icon" onclick="toggleNav()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <div class="nav-slider">
+            <ul>
+              <a href="experience.html"><li>experience</li></a>
+              <a href="menu.html"><li>menu</li></a>
+              <a href="location.html"><li>location</li></a>
+              <a href="career.html"><li>career</li></a>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section
+        class="section section-header-img"
+        id="location-section1-bg-img"
+      ></section>
+      <section class="section auto-height margin-adjustment">
+        <div
+          class="section-description section-description-italics section-description-small-font"
+        >
+          <h2 class="section-title">hours & location</h2>
+          <p class="location-address">
+            1234Fifth Lux Dining Avenue,<br />
+            Omaha, NE 68130 <br />
+            (123) 456-7890
+          </p>
+        </div>
+      </section>
+      <section class="section auto-height margin-adjustment">
+        <div
+          class="section-description section-description-italics section-description-small-font"
+        >
+          <h3>Monday</h3>
+          <p>5:00pm - 12:00am</p>
+          <h3>Tuesday - Thursday</h3>
+          <p>5:00pm - 1:00am</p>
+          <h3>Friday</h3>
+          <p>5:00pm - 2:00am</p>
+          <h3>Saturday</h3>
+          <p>11:00am - 2:00am</p>
+          <h3>Sunday</h3>
+          <p>11:00am - 12:00pm</p>
+          <h3 class="location-hours-header">weekend brunch</h3>
+          <h3>Saturday & Sunday</h3>
+          <p>11:00am - 4:00pm</p>
+          <h3 class="location-hours-header">happy hour</h3>
+          <h3>Monday - Tuesday</h3>
+          <p>5:00pm - 8:00pm</p>
+          <h3>Wednesday - Friday</h3>
+          <p>5:00pm - 7:00pm</p>
+          <h3 class="location-hours-header">weekend happy hour</h3>
+          <h3>Saturday & Sunday</h3>
+          <p>3:00pm - 6:00pm</p>
+        </div>
+      </section>
+      <section class="section auto-height">
+        <div id="mapid"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="fb">
+        <a href="https://facebook.com" target="_blank"
+          ><img
+            src="../img/Facebook Logo.png"
+            alt="Facebook"
+            width="50"
+            height="50"
+        /></a>
+      </div>
+      <div class="twitter">
+        <a href="https://twitter.com" target="_blank"
+          ><img
+            src="../img/Twitter_Social_Icon_Rounded_Square_Color.png"
+            alt="twitter"
+            width="50"
+            height="50"
+        /></a>
+      </div>
+      <div class="youtube">
+        <a href="https://youtube.com" target="_blank"
+          ><img
+            src="../img/Youtube Logo.png"
+            alt="youtube"
+            width="50"
+            height="50"
+        /></a>
+      </div>
+    </footer>
+  </body>
+  <script src="../main.js"></script>
+  <script src="../map.js"></script>
+</html>

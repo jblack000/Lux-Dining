@@ -1,0 +1,589 @@
+@import url("https://fonts.googleapis.com/css?family=Jim+Nightshade|Orbitron|Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  color: #edecec;
+  background: url(img/bg.png) center fixed;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #edecec;
+}
+
+.main-container {
+  width: 100%;
+  height: auto;
+}
+
+/* 
+============== Menu ==============
+
+# Navbar
+
+# Main sections
+  ## Menu section
+  ## Location section
+  ## Career section
+
+# Buttons   
+
+*/
+
+/* ------------------- Navbar ------------------- */
+
+.nav-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.logo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5em;
+  font-weight: lighter;
+  letter-spacing: 0.2em;
+  margin-left: 10px;
+}
+
+.nav-icon {
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.nav-icon div {
+  width: 30px;
+  height: 3px;
+  background-color: #edecec;
+  margin: 7px auto;
+}
+
+.nav-icon:hover div {
+  background-color: #917952;
+  transition: 0.3s;
+}
+
+.nav-slider {
+  border-top: 2px solid #917952;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 100%;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.nav-slider ul {
+  text-align: center;
+  letter-spacing: 0.2em;
+  padding: 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.nav-slider ul li {
+  padding: 1em 3em;
+}
+
+.nav-slider ul li:hover {
+  color: #917952;
+  transition: 0.3s;
+}
+
+/* ------------------- Section Blocks containing text and images ------------------- */
+
+/* Home Page */
+
+.section {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.section-title {
+  color: #917952;
+  letter-spacing: 0.3em;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.section-description {
+  max-width: 800px;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+  font-size: 1.3em;
+  margin: 0 14px;
+}
+
+.section-description-italics {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.section-description-small-font {
+  font-style: normal;
+}
+
+.text-change {
+  font-weight: bold;
+  font-size: 1.5em;
+  font-style: normal;
+}
+
+/* Experience Page */
+
+.section-text-box {
+  width: 100%;
+  height: auto;
+}
+
+.section-text {
+  max-width: 900px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+}
+
+.section-text-title {
+  font-size: 2em;
+  color: #917952;
+}
+
+.section-text-info {
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+
+.section-experience-img-text {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.section-grid-text {
+  max-width: 900px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+}
+
+.section-grid-text-info {
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+
+/* Menu Section */
+
+.auto-height {
+  height: auto;
+}
+.menu-item {
+  text-transform: uppercase;
+  color: #908a81;
+  font-style: normal;
+  font-size: 1.4em;
+}
+
+.menu-item-description {
+  font-size: 1em;
+}
+
+.menu-nav {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.menu-nav li {
+  border: 2px solid black;
+  padding: 1em 0.8em;
+  margin: 1em 0.5em;
+}
+
+.menu-nav li:hover {
+  border: 2px solid #917952;
+  transition: 0.3s;
+}
+
+/* Location section */
+
+.location-hours-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #917952;
+  margin-top: 2em;
+}
+
+.margin-adjustment {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+#mapid {
+  width: 100vw;
+  height: 50vh;
+}
+
+.location-address {
+  color: #908a81;
+}
+
+/* Career Section */
+
+.careers-template {
+  width: 100vw;
+  max-width: 800px;
+  margin: 0 14px;
+}
+
+.careers-form {
+  height: auto;
+  margin-bottom: 3em;
+}
+
+.careers-form input {
+  width: 100%;
+  height: 2em;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  padding: 0 0.4em;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+.careers-form textarea {
+  resize: vertical;
+  width: 100%;
+  height: 20vh;
+  font-size: 1.3em;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  margin-bottom: 2em;
+}
+
+/* ------------------- Background Images ------------------- */
+
+.landing-page-img {
+  width: 100%;
+  height: 80vh;
+}
+
+.section-header-img {
+  width: 100%;
+  height: 80vh;
+}
+
+/* Home Page */
+
+.slideshow {
+  width: 100%;
+  height: 100vh;
+  animation: animate 25s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    /* background-image: url(img/pic-1.jpg); */
+    background: url(img/pic-1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  20% {
+    /* background-image: url(img/pic-2.jpg); */
+    background: url(img/pic-2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  40% {
+    /* background-image: url(img/pic-3.jpg); */
+    background: url(img/pic-3.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  60% {
+    /* background-image: url(img/pic-4.jpg); */
+    background: url(img/pic-4.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  80% {
+    /* background-image: url(img/pic-5.jpg); */
+    background: url(img/pic-5.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+#home-section3-bg-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/pic-4.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Experience Page */
+
+#experience-landing-img {
+  background: url(img/pic-6.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#section-experience-img1 {
+  background: url(img/pic-7.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+#section-experience-img2 {
+  background: url(img/pic-8.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+/* Menu Page */
+
+#menu-section1-bg-img {
+  background: url(img/pic-9.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Location Page */
+
+#location-section1-bg-img {
+  background: url(img/pic-10.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* career */
+
+#career-section1-bg-img {
+  background: url(img/pic-11.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* ------------------- Buttons ------------------- */
+
+.btn {
+  background: none;
+  color: #edecec;
+  padding: 1em 1.5em;
+  border: 5px double #917952;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 5px double #edecec;
+  color: #917952;
+  transition: 0.3s;
+}
+
+/* ------------------- Footer ------------------- */
+
+.footer {
+  display: none;
+  background: black;
+  width: 100%;
+  height: 100px;
+  border-top: 2px solid #917952;
+}
+
+.footer div {
+  margin: 1em 2em;
+}
+
+/* ------------------- Media Queries 1024px and up ------------------- */
+
+/* Navbar */
+
+@media screen and (min-width: 1024px) {
+  .nav-container {
+    height: 70px;
+  }
+
+  .logo {
+    font-family: "Jim Nightshade", cursive;
+    font-size: 5em;
+    letter-spacing: 0;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+  .nav-container {
+    justify-content: space-evenly;
+  }
+
+  .nav-slider {
+    border: none;
+    position: relative;
+    justify-content: center;
+    width: auto;
+    height: 60px;
+    background: none;
+    transform: translateX(0);
+    transition: 0s;
+    top: 0;
+    font-weight: bolder;
+  }
+
+  .nav-slider ul {
+    height: 50px;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-slider ul li {
+    padding: 1em 2em;
+  }
+
+  .nav-slider a:hover {
+    border-bottom: 2px solid #917952;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Experience Page */
+
+@media screen and (min-width: 1024px) {
+  #section-experience-img-text {
+    /* width: 100%;
+    height: auto;
+    text-align: center; */
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section-experience-img-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-height: 400px;
+    height: 70vh;
+    margin-bottom: 5em;
+  }
+
+  #section-experience-img1 {
+    background: url(img/pic-7.jpg) no-repeat center;
+    grid-column: 3 / 6;
+    grid-row: 1 / 4;
+    width: auto;
+    height: auto;
+  }
+
+  .section-grid-text {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .section-grid-text-info {
+    background-color: rgba(68, 50, 50, 0.8);
+    padding: 2em;
+  }
+
+  #section-experience-img2 {
+    background: url(img/pic-8.jpg) no-repeat center;
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    width: auto;
+    height: auto;
+  }
+
+  .section-grid-text#grid-adjusted {
+    grid-column: 3 / 5;
+  }
+}
+
+/* Menu Page */
+
+@media screen and (min-width: 1024px) {
+  .section-description.section-description-italics#menu-columns-flex {
+    display: flex;
+    flex-direction: row;
+  }
+}
